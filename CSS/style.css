@@ -1,0 +1,516 @@
+/* Top Section */
+.top-bar{
+    background:#0d2c6c;
+    color:white;
+    padding:0 20px;
+    height:60px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:1000;
+
+    font-size:15px;
+    font-weight:600;
+}
+
+/* Text normal */
+.top-text{
+    margin:auto;   
+}
+
+/* Button right */
+.apply-btn{
+    background:#ff7a00;
+    color:white;
+    padding:6px 14px;
+    text-decoration:none;
+    border-radius:4px;
+    font-size:14px;
+    transition:0.3s;
+    white-space:nowrap;
+}
+
+
+/*  Mobile view */
+@media(max-width:350px){
+
+.top-strip{
+    flex-direction:column;
+    height:auto;
+    padding:10px;
+    gap:6px;
+}
+
+body{
+    padding-top:110px;
+}
+
+
+
+}
+
+/* NAVBAR CSS */
+
+.navbar{
+    padding:12px 0;
+}
+
+/* Container */
+.navbar .container{
+    display:flex;
+    align-items:center;
+    
+}
+
+/* Center menu properly */
+.navbar-collapse{
+    justify-content:center;
+}
+
+/* Menu text spacing */
+.navbar-nav{
+    gap:22px;
+}
+
+
+.navbar .nav-link{
+    white-space:nowrap;
+    font-weight:600;
+    font-size:15px;
+    
+    color:#333;
+    transition:0.3s ease;
+}
+
+/* Hover only text color */
+.navbar .nav-link:hover{
+    color:#ff7a00;
+}
+
+/* Logo  */
+.navbar-brand img{
+    display:block;
+}
+
+/* Enquiry Button */
+.navbar .btn-primary{
+    background:#0d2c6c;
+    border:none;
+    padding:8px 10px;
+    border-radius:6px;
+    font-weight:500;
+    transition:0.3s ease;
+     white-space:nowrap;   
+}
+
+.navbar .btn-primary:hover{
+    background:#ff7a00;
+}
+
+@media (max-width:768px){
+    .carousel-item img{
+        height: 100px;
+    }
+}
+
+/* logo section css */
+
+.affiliation-section{
+    background: #f2f2f2;
+    padding-bottom: 140px;
+}
+
+.section-title{
+    font-size: 36px;
+    font-weight: 700;
+    color: #0b3d6d;
+}
+
+.affiliation-logo{
+    max-height: 150px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.affiliation-logo:hover{
+    transform: translateY(-12px);
+}
+
+/* Mobile */
+@media (max-width:768px){
+    .section-title{
+        font-size: 22px;
+    }
+
+    .affiliation-logo{
+        max-height: 70px;
+    }
+}
+
+/* logo section css end */
+
+/* Card section css start */
+
+.excellence-section{
+    background:#f4f6f8;
+    padding-bottom: 180px;
+}
+
+.section-title{
+    font-size:36px;
+    font-weight:700;
+    color:#0b3d6d;
+}
+
+.excellence-card{
+    background:white;
+    padding:40px 25px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
+    transition:0.3s;
+    height:100%;
+}
+
+.excellence-card:hover{
+    transform:translateY(-8px);
+}
+
+.excellence-card h4{
+    font-weight:600;
+    margin-bottom:15px;
+    color:#0b3d6d;
+}
+
+.excellence-card p{
+    font-size:15px;
+    color:#555;
+}
+
+.icon-box{
+    font-size:40px;
+    color:#3b82f6;
+}
+
+
+/* card section css end*/
+
+/* card2 section css Start*/
+
+
+.vision-section{
+    background:#f4f6f8;
+    padding:80px 0;
+}
+
+.section-title{
+    font-size:36px;
+    font-weight:700;
+    color:#0b3d6d;
+    margin-bottom:80px;
+}
+
+.vision-card{
+    background:white;
+    border-radius:15px;
+    padding-top:70px;  /* space for image */
+    padding-bottom:30px;
+    padding-left:25px;
+    padding-right:25px;
+    position:relative;
+    box-shadow:0 10px 25px rgba(0,0,0,0.06);
+    transition:0.3s;
+    text-align:center;
+}
+
+.vision-card:hover{
+    transform:translateY(-8px);
+}
+
+.vision-img{
+    position:absolute;
+    top:0;
+    left:50%;
+    transform:translate(-50%, -50%); /* circle top edge */
+}
+
+.vision-img img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid #f4a100;
+}
+
+.quote{
+    font-size:40px;
+    color:#f4a100;
+    margin-bottom:15px;
+    margin-top:10px;
+}
+
+.vision-content p{
+    font-size:15px;
+    color:#555;
+    line-height:1.7;
+    margin-top:10px;
+}
+
+.vision-content h5{
+    margin-top:20px;
+    font-weight:600;
+    color:#0b3d6d;
+}
+
+.vision-content span{
+    font-size:14px;
+    color:#777;
+}
+
+/* Responsive */
+@media (max-width:768px){
+    .section-title{
+        font-size:28px;
+        margin-bottom:40px;
+    }
+    .vision-img img{
+        width:90px;
+        height:90px;
+        border-width:4px;
+    }
+    .quote{
+        font-size:30px;
+    }
+    .vision-content p{
+        font-size:14px;
+    }
+    .vision-content h5{
+        font-size:16px;
+    }
+    .vision-content span{
+        font-size:13px;
+    }
+}
+
+/* card2 section css end*/
+
+
+
+/* card3 section css start*/
+
+.institution-card{
+    position:relative;
+    overflow:hidden;
+    border-radius:15px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.institution-card img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    display:block;
+    transition:transform 0.5s ease;
+}
+
+/* Zoom effect */
+.institution-card:hover img{
+    transform:scale(1.1);
+}
+
+/* Dark transparent overlay */
+.institution-card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(59, 48, 211, 0.35);
+    transition:0.3s;
+}
+
+.institution-card:hover::before{
+    background:rgba(0,0,0,0.5);
+}
+
+/* Content */
+.institution-content{
+    position:absolute;
+    bottom:25px;
+    left:25px;
+    color:white;
+    z-index:2;
+    text-align:left;
+}
+
+.institution-content h5{
+    font-size:20px;
+    font-weight:600;
+    margin-bottom:8px;
+    position:relative;
+    display:inline-block;
+}
+
+/* 🔶 Line under heading */
+.institution-content h5::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:60px;           
+    height:3px;
+    background:#f4a100;   
+}
+
+/* Explore link */
+.institution-content a{
+    display:block;
+    margin-top:12px;
+    font-size:20px;
+    font-weight: 500;
+    color:#f4a100;
+    text-decoration:none;
+}
+
+.institution-content a:hover{
+    text-decoration:underline;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .institution-card img{
+        height:200px;
+    }
+}
+
+.row.custom-gap{
+    --bs-gutter-x: 60px;   /* default 24px hota hai, yeh zyada gap dega */
+}
+
+/* card3 section css end*/
+
+
+
+/* Slider2 Section Css Start*/
+.alumni-section{
+    background:#f4f6f8;
+}
+
+/* Section Title */
+.section-title{
+    font-size:36px;
+    font-weight:700;
+    color:#0b3d6d;
+}
+
+/* ===== SLIDER WIDTH CONTROL ===== */
+#alumniCarousel{
+    max-width:1450px;   /* 🔥 YAHAN WIDTH CONTROL KARO */
+    margin:0 auto;
+}
+
+/* Split Layout */
+.split-slide{
+    display:flex;
+    width:100%;
+    min-height:800px;
+    background:#eef1f5;
+    border-radius:20px;
+}
+
+/* Left Half */
+.left-half{
+    flex:1;
+}
+
+/* Right Half */
+.right-half{
+    flex:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:60px;
+}
+
+/* Card */
+.alumni-card{
+    background:#fff;
+    padding:50px 40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    max-width:650px;   /* card width */
+    width:100%;
+}
+
+/* Stars */
+.stars{
+    color:#f4a100;
+    font-size:22px;
+    margin-bottom:20px;
+}
+
+/* Text */
+.alumni-text{
+    font-size:18px;
+    color:#444;
+    line-height:1.7;
+    margin-bottom:30px;
+}
+
+.alumni-card hr{
+    margin:25px 0;
+}
+
+.alumni-card h5{
+    font-weight:600;
+    color:#0b3d6d;
+    margin-bottom:5px;
+}
+
+.alumni-card span{
+    font-size:14px;
+    color:#777;
+}
+
+/* Indicators */
+.carousel-indicators{
+    position:relative !important;
+    margin-top:40px;
+    display:flex;
+    justify-content:center;
+}
+
+.carousel-indicators button{
+    width:14px !important;
+    height:14px !important;
+    border-radius:0 !important;
+    background-color:#9bb3d6 !important;
+    border:none !important;
+    margin:0 6px !important;
+    opacity:1 !important;
+}
+
+.carousel-indicators .active{
+    background-color:#0b3d6d !important;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .split-slide{
+        flex-direction:column;
+        min-height:auto;
+    }
+    .left-half,
+    .right-half{
+        width:100%;
+    }
+}
+/* Slider2 Section Css End*/
