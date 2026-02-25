@@ -354,6 +354,7 @@
 <!-- Slider2 Section end-->
 
 
+<!-- Contact Form Start-->
 
 <section class="inquiry-section">
   <div class="container">
@@ -399,7 +400,10 @@
   </div>
 </section>
 
+<!-- Contact Form End-->
 
+<!-- FOTTER INCLUDE -->
+<?php include 'Includes/footer.php'; ?>
 
 
 

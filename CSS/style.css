@@ -516,7 +516,7 @@ body{
 /* Slider2 Section Css End*/
 
 
-/* ===== CONTACT SECTION ===== */
+/* ===== CONTACT SECTION  START===== */
 
 .inquiry-section{
     background:#f4f6f8;
@@ -592,3 +592,5 @@ body{
 .whatsapp-btn:hover{
     background:#3a6fae;
 }
+
+/* ===== CONTACT SECTION  END===== */
