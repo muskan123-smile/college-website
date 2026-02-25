@@ -355,6 +355,51 @@
 
 
 
+<section class="inquiry-section">
+  <div class="container">
+    <div class="inquiry-box">
+      
+      <h2 class="inquiry-title">Quick Admission Inquiry</h2>
+
+      <form>
+
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter your name">
+        </div>
+
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="text" placeholder="Enter your mobile number">
+        </div>
+
+        <div class="form-group">
+          <label>Interested Course</label>
+          <select>
+            <option>Select a program</option>
+            <option>B.Pharm</option>
+            <option>M.Pharm</option>
+            <option>B.Tech Biotech</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Your Question</label>
+          <textarea placeholder="Type your message here..."></textarea>
+        </div>
+
+        <button type="submit" class="whatsapp-btn">
+          <i class="fa-brands fa-whatsapp"></i>
+          SEND TO WHATSAPP
+        </button>
+
+      </form>
+
+    </div>
+  </div>
+</section>
+
+
 
 
 

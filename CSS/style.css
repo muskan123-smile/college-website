@@ -514,3 +514,81 @@ body{
     }
 }
 /* Slider2 Section Css End*/
+
+
+/* ===== CONTACT SECTION ===== */
+
+.inquiry-section{
+    background:#f4f6f8;
+    padding:60px 0;
+}
+
+.inquiry-box{
+    background:#f0f1f3;
+    padding:50px 60px;
+    border-radius:12px;
+}
+
+.inquiry-title{
+    text-align:center;
+    font-size:34px;
+    font-weight:700;
+    color:#0b3d6d;
+    margin-bottom:40px;
+}
+
+.form-group{
+    margin-bottom:25px;
+}
+
+.form-group label{
+    display:block;
+    font-weight:600;
+    margin-bottom:8px;
+    color:#0b3d6d;
+    font-size:14px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    width:100%;
+    padding:14px 16px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:15px;
+    outline:none;
+    transition:0.3s;
+}
+
+.form-group textarea{
+    height:120px;
+    resize:none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+    border-color:#0b3d6d;
+}
+
+.whatsapp-btn{
+    width:100%;
+    background:#4f83c2;
+    color:#fff;
+    padding:16px;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.whatsapp-btn i{
+    margin-right:8px;
+}
+
+.whatsapp-btn:hover{
+    background:#3a6fae;
+}
