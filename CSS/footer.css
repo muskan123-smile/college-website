@@ -35,7 +35,7 @@
    LOGO BLOCK
 ================================ */
 .footer-logo {
-  width: 110px;
+  width: 130px;
   margin-bottom: 18px;
   filter: drop-shadow(0 12px 22px rgba(0,0,0,0.35));
 }
@@ -43,7 +43,7 @@
 .footer-about p {
   color: rgba(255,255,255,0.88);
   line-height: 1.75;
-  font-size: 15px;
+  font-size: 20px;
   max-width: 340px;
 }
 
@@ -52,7 +52,7 @@
 ================================ */
 .footer-title {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 30px;
   margin-bottom: 22px;
   position: relative;
   padding-bottom: 10px;
@@ -81,12 +81,13 @@
 
 .footer-links li {
   margin-bottom: 12px;
+  
 }
 
 .footer-links a {
   color: rgba(255,255,255,0.88);
   text-decoration: none;
-  font-size: 15px;
+  font-size: 20px;
   transition: .3s;
   position: relative;
 }
@@ -123,7 +124,7 @@
   align-items: flex-start;
   gap: 12px;
   margin-bottom: 14px;
-  font-size: 15px;
+  font-size: 20px;
   color: rgba(255,255,255,0.9);
   line-height: 1.6;
 }
@@ -156,7 +157,7 @@
 
 .footer-social a {
   width: 42px;
-  height: 42px;
+  height: 50px;
   border-radius: 50%;
   background: rgba(255,255,255,0.12);
   backdrop-filter: blur(6px);
@@ -165,7 +166,7 @@
   justify-content: center;
   text-decoration: none;
   color: #fff;
-  font-size: 16px;
+  font-size: 30px;
   transition: all .35s ease;
   box-shadow: 0 6px 14px rgba(0,0,0,0.25);
 }
@@ -188,7 +189,7 @@
   border-top: 1px solid rgba(255,255,255,0.18);
   margin-top: 45px;
   padding-top: 18px;
-  font-size: 14px;
+  font-size: 18px;
   color: rgba(255,255,255,0.78);
   letter-spacing: .3px;
 }
@@ -268,24 +269,27 @@
 /* ===============================
    FLOATING CONTACT WIDGETS
 ================================ */
+/* ===============================
+   POSITION (LEFT SIDE)
+================================ */
+/* FORCE LEFT SIDE */
 .phone-widget,
 .wa-widget{
-  position:fixed;
-  right:26px;
-  z-index:9999;
+  position: fixed !important;
+  left: 26px !important;
+  right: auto !important;
+  z-index: 9999;
 }
 
-.wa-widget{ bottom:26px; }
-.phone-widget{ bottom:106px; }
+.wa-widget{ bottom: 26px; }
+.phone-widget{ bottom: 106px; }
 
-/* ===============================
-   COMMON BUTTON
-================================ */
+/* BUTTON STYLE */
 .phone-widget a,
 .wa-widget a{
   width:60px;
   height:60px;
-  border-radius:50%;
+  border-radius:12%;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -299,16 +303,10 @@
 /* COLORS */
 .wa-widget a{
   background:linear-gradient(135deg,#25d366,#1ebe5d);
-  box-shadow:
-    0 14px 32px rgba(37,211,102,.45),
-    0 6px 14px rgba(0,0,0,.2);
 }
 
 .phone-widget a{
   background:linear-gradient(135deg,#0c3b6e,#0a2f57);
-  box-shadow:
-    0 14px 32px rgba(12,59,110,.45),
-    0 6px 14px rgba(0,0,0,.2);
 }
 
 /* HOVER */
@@ -317,42 +315,14 @@
   transform:translateY(-5px) scale(1.06);
 }
 
-/* ===============================
-   HALO
-================================ */
-.phone-widget::before,
-.wa-widget::before{
-  content:"";
-  position:absolute;
-  inset:-6px;
-  border-radius:50%;
-  filter:blur(4px);
-  z-index:-1;
-  animation:floatGlow 3s ease-in-out infinite;
-}
-
-.wa-widget::before{
-  background:radial-gradient(circle,rgba(37,211,102,.35),transparent 70%);
-}
-
-.phone-widget::before{
-  background:radial-gradient(circle,rgba(12,59,110,.35),transparent 70%);
-}
-
-@keyframes floatGlow{
-  0%,100%{transform:scale(1);opacity:.6;}
-  50%{transform:scale(1.25);opacity:.25;}
-}
-
-/* ===============================
-   TOOLTIP (MATCHED)
-================================ */
+/* TOOLTIP LEFT SIDE */
 .phone-widget a::after,
 .wa-widget a::after{
   position:absolute;
-  right:78px;
+  left:78px !important;
+  right:auto !important;
   top:50%;
-  transform:translateY(-50%) translateX(8px);
+  transform:translateY(-50%);
   background:#0c3b6e;
   color:#fff;
   font-size:13px;
@@ -361,57 +331,45 @@
   border-radius:6px;
   white-space:nowrap;
   opacity:0;
-  pointer-events:none;
   transition:.25s;
-  box-shadow:0 6px 16px rgba(0,0,0,.25);
 }
 
-/* LABELS */
 .wa-widget a::after{ content:"Chat with us"; }
 .phone-widget a::after{ content:"Call Now"; }
 
-/* ARROW */
+/* ARROW FIX */
 .phone-widget a::before,
 .wa-widget a::before{
   content:"";
   position:absolute;
-  right:68px;
+  left:68px !important;
+  right:auto !important;
   top:50%;
   transform:translateY(-50%);
   border:6px solid transparent;
-  border-left-color:#0c3b6e;
+  border-right-color:#0c3b6e;
   opacity:0;
   transition:.25s;
 }
 
-/* SHOW */
+/* SHOW TOOLTIP */
 .phone-widget a:hover::after,
 .phone-widget a:hover::before,
 .wa-widget a:hover::after,
 .wa-widget a:hover::before{
   opacity:1;
-  transform:translateY(-50%) translateX(0);
 }
 
-/* ===============================
-   MOBILE
-================================ */
+/* MOBILE */
 @media (max-width:576px){
-
   .phone-widget,
   .wa-widget{
-    right:16px;
+    left:16px !important;
+    right:auto !important;
   }
 
   .wa-widget{ bottom:16px; }
   .phone-widget{ bottom:86px; }
-
-  .phone-widget a,
-  .wa-widget a{
-    width:56px;
-    height:56px;
-    font-size:26px;
-  }
 
   .phone-widget a::after,
   .phone-widget a::before,
@@ -419,5 +377,4 @@
   .wa-widget a::before{
     display:none;
   }
-
 }

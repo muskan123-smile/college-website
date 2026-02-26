@@ -1,146 +1,429 @@
-/* Top Section */
-.top-bar{
-    background:#0d2c6c;
-    color:white;
-    padding:0 20px;
-    height:60px;
-
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-
-    position:fixed;
-    width:100%;
-    top:0;
-    left:0;
-    z-index:1000;
-
-    font-size:15px;
-    font-weight:600;
+/*   CSS Start*/
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-/* Text normal */
-.top-text{
-    margin:auto;   
+/* ===============================
+   TOP BAR
+================================ */
+.top-bar {
+  background: linear-gradient(90deg,#0c3b6e,#0a2f57);
+  color: #fff;
+  padding: 18px 0;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.45s ease;
 }
 
-/* Button right */
-.apply-btn{
-    background:#ff7a00;
-    color:white;
-    padding:6px 14px;
-    text-decoration:none;
-    border-radius:4px;
-    font-size:14px;
-    transition:0.3s;
-    white-space:nowrap;
+.top-bar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -40%;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(120deg,transparent,rgba(255,255,255,0.18),transparent);
+  transform: skewX(-25deg);
+  animation: topShine 6s linear infinite;
+}
+
+@keyframes topShine {
+  0% { left: -40%; }
+  100% { left: 120%; }
+}
+
+.top-bar .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.top-text {
+  font-weight: 800;
+  letter-spacing: .6px;
+  text-align: center;
+  padding: 0 60px;
+  font-size: 22px;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.25);
+}
+/* ===============================
+   BLINKING APPLY BUTTON
+================================ */
+.apply-btn {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 7px 20px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: .4px;
+  color: #e4e7ec;
+  background: linear-gradient(135deg,#e3b41b,#ffb300);
+  border: none;
+  white-space: nowrap;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.18);
+  transition: all 0.25s ease;
+  overflow: visible;
+  animation: applyBlink 20s infinite;
+}
+
+/* glow ring */
+.apply-btn::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 6px;
+  border: 2px solid rgba(255,255,255,0.6);
+  opacity: 0;
+  animation: applyRing 1s infinite;
+}
+
+/* hover */
+.apply-btn:hover {
+  transform: translateY(-50%) translateY(-2px) scale(1.05);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.28);
+  background: linear-gradient(135deg,#ffe082,#ffca28);
+}
+
+/* ===============================
+   MOBILE GAP FIX
+================================ */
+@media (max-width: 576px) {
+
+  .apply-btn {
+    position: static;
+    transform: none;
+    margin-top: 8px;   /* â­ gap between text & button */
+  }
+
+  .apply-btn:hover {
+    transform: translateY(-1px) scale(1.04);
+  }
+}
+/* brightness pulse */
+@keyframes applyBlink {
+  0%,100% {
+    filter: brightness(1);
+    transform: translateY(-50%) scale(1);
+  }
+  50% {
+    filter: brightness(1.35);
+    transform: translateY(-50%) scale(1.08);
+  }
+}
+
+/* ring pulse */
+@keyframes applyRing {
+  0% {
+    transform: scale(1);
+    opacity: .7;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+/* ===============================
+   CLOSE BUTTON
+================================ */
+.top-close {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  cursor: pointer;
+  opacity: .85;
+  transition: all 0.25s ease;
+}
+
+.top-bar.hide-bar {
+  height: 0;
+  padding: 0;
+  opacity: 0;
 }
 
 
-/*  Mobile view */
-@media(max-width:350px){
-
-.top-strip{
-    flex-direction:column;
-    height:auto;
-    padding:10px;
-    gap:6px;
+/* ===============================
+   NAVBAR
+================================ */
+/* ===============================
+   MAIN NAVBAR
+================================ */
+.main-navbar {
+  background: #f5f7fa;
+  padding: 12px 0;
+  border-bottom: 1px solid #e6e9ee;
+  transition: 0.3s;
 }
 
-body{
-    padding-top:110px;
+.main-navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 0px !important;
+}
+
+.main-navbar.sticky-top {
+  box-shadow: 0 3px 14px rgba(0,0,0,0.06);
+}
+
+/* ===============================
+   LOGO
+================================ */
+.navbar-brand {
+  padding: 0;
+  margin-right: 10px;
+}
+
+.logo {
+  height: 115px;
+  object-fit: contain;
+  transition: 0.3s;
+}
+
+/* ===============================
+   MENU LINKS
+================================ */
+.navbar-nav {
+  align-items: center;
+}
+
+.navbar-nav .nav-link {
+  color: #1c3c63;
+  font-weight: 800;
+  font-size: 17px;
+  letter-spacing: 0.8px;
+  position: relative;
+  padding: 15px 10px;
+  transition: 0.25s;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: #0c3b6e;
+  transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffb300;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* ===============================
+   INQUIRY BUTTON
+================================ */
+.inquiry-btn {
+  background: linear-gradient(135deg,#0c3b6e,#0a2f57);
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  margin-left: 50px;   /* 🔥 Right shift */
+  transition: 0.3s;
+}
+
+.inquiry-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(12,59,110,0.25);
+  color: #ffb300;
+}
+
+/* ===============================
+   CUSTOM TOGGLER
+================================ */
+.navbar-toggler{
+  border:none;
+  outline:none;
+  box-shadow:none;
+  width:32px;
+  height:32px;
+  position:relative;
+}
+
+.toggler-icon,
+.toggler-icon::before,
+.toggler-icon::after{
+  content:"";
+  position:absolute;
+  left:0;
+  width:100%;
+  height:3px;
+  background:#0c3b6e;
+  transition:.3s;
+}
+
+.toggler-icon{
+  top:50%;
+  transform:translateY(-50%);
+}
+
+.toggler-icon::before{
+  top:-8px;
+}
+
+.toggler-icon::after{
+  top:8px;
+}
+
+.navbar-toggler.open .toggler-icon{
+  background:transparent;
+}
+
+.navbar-toggler.open .toggler-icon::before{
+  top:0;
+  transform:rotate(45deg);
+}
+
+.navbar-toggler.open .toggler-icon::after{
+  top:0;
+  transform:rotate(-45deg);
+}
+
+/* ===============================
+   TABLET
+================================ */
+@media (max-width: 991px) {
+
+  .logo { height: 85px; }
+
+  .navbar-collapse {
+    background: #fff;
+    padding: 18px;
+    margin-top: 12px;
+    border-radius: 12px;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+  }
+
+  .inquiry-btn {
+    margin-left: 0;   /* 🔥 Responsive fix */
+    height: 38px;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+/* ===============================
+   MOBILE
+================================ */
+@media (max-width: 576px) {
+
+  .logo { height: 65px; }
+
+  .navbar { padding: 8px 0; }
+
+  .inquiry-btn {
+    margin-left: 0;   /* 🔥 No extra space */
+    height: 34px;
+    padding: 6px 14px;
+    font-size: 13px;
+  }
+}
+
+/* ===============================
+   DROPDOWN
+================================ */
+.dropdown-toggle::after { 
+  display: none; 
+}
+
+.dropdown-arrow {
+  font-size: 12px;
+  transition: transform 0.25s ease;
+}
+
+.show > .nav-link .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+@media (min-width: 992px) {
+  .nav-item.dropdown:hover .dropdown-menu { 
+    display: block; 
+  }
+}
+
+.custom-dropdown {
+  border-radius: 10px;
+  border: 1px solid #e6e9ee;
+  padding: 8px 0;
+  margin-top: 12px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+  min-width: 210px;
+}
+
+.custom-dropdown .dropdown-item {
+  font-weight: 500;
+  color: #1c3c63;
+  padding: 10px 18px;
+  transition: 0.25s;
+}
+
+.custom-dropdown .dropdown-item:hover {
+  background: #f5f7fa;
+  color: #0c3b6e;
+  padding-left: 22px;
 }
 
 
-
-}
-
-/* NAVBAR CSS */
-
-.navbar{
-    padding:12px 0;
-}
-
-/* Container */
-.navbar .container{
-    display:flex;
-    align-items:center;
-    
-}
-
-/* Center menu properly */
-.navbar-collapse{
-    justify-content:center;
-}
-
-/* Menu text spacing */
-.navbar-nav{
-    gap:22px;
-}
+/*  navbar end*/
 
 
-.navbar .nav-link{
-    white-space:nowrap;
-    font-weight:600;
-    font-size:15px;
-    
-    color:#333;
-    transition:0.3s ease;
-}
-
-/* Hover only text color */
-.navbar .nav-link:hover{
-    color:#ff7a00;
-}
-
-/* Logo  */
-.navbar-brand img{
-    display:block;
-}
-
-/* Enquiry Button */
-.navbar .btn-primary{
-    background:#0d2c6c;
-    border:none;
-    padding:8px 10px;
-    border-radius:6px;
-    font-weight:500;
-    transition:0.3s ease;
-     white-space:nowrap;   
-}
-
-.navbar .btn-primary:hover{
-    background:#ff7a00;
-}
-
-@media (max-width:768px){
-    .carousel-item img{
-        height: 100px;
-    }
-}
 
 /* logo section css */
 
 .affiliation-section{
     background: #f2f2f2;
-    padding-bottom: 140px;
+    padding: 80px 0;   /* upar + neeche equal spacing */
 }
 
 .section-title{
     font-size: 36px;
     font-weight: 700;
     color: #0b3d6d;
+    margin-bottom: 50px;
 }
 
 .affiliation-logo{
-    max-height: 150px;
+    max-height: 170px;   /* thoda reduce kiya taaki 4 logos balanced lage */
     width: auto;
     transition: transform 0.3s ease;
 }
 
 /* Hover Effect */
 .affiliation-logo:hover{
-    transform: translateY(-12px);
+    transform: translateY(-10px);
+}
+
+/* Tablet */
+@media (max-width:992px){
+    .affiliation-logo{
+        max-height: 90px;
+    }
 }
 
 /* Mobile */
@@ -153,7 +436,6 @@ body{
         max-height: 70px;
     }
 }
-
 /* logo section css end */
 
 /* Card section css start */
@@ -309,7 +591,7 @@ body{
     overflow:hidden;
     border-radius:15px;
     cursor:pointer;
-    transition:0.3s;
+    transition:0.3s ease;
 }
 
 .institution-card img{
@@ -334,7 +616,8 @@ body{
     width:100%;
     height:100%;
     background:rgba(59, 48, 211, 0.35);
-    transition:0.3s;
+    transition:0.3s ease;
+    z-index:1;
 }
 
 .institution-card:hover::before{
@@ -351,8 +634,9 @@ body{
     text-align:left;
 }
 
-.institution-content h5{
-    font-size:20px;
+/* 🔹 Heading (h3 according to HTML) */
+.institution-content h3{
+    font-size:22px;
     font-weight:600;
     margin-bottom:8px;
     position:relative;
@@ -360,24 +644,25 @@ body{
 }
 
 /* 🔶 Line under heading */
-.institution-content h5::after{
+.institution-content h3::after{
     content:"";
     position:absolute;
     left:0;
     bottom:-6px;
-    width:60px;           
+    width:60px;
     height:3px;
-    background:#f4a100;   
+    background:#f4a100;
 }
 
 /* Explore link */
 .institution-content a{
     display:block;
-    margin-top:12px;
-    font-size:20px;
-    font-weight: 500;
+    margin-top:14px;
+    font-size:18px;
+    font-weight:500;
     color:#f4a100;
     text-decoration:none;
+    transition:0.3s;
 }
 
 .institution-content a:hover{
@@ -387,17 +672,14 @@ body{
 /* Responsive */
 @media(max-width:768px){
     .institution-card img{
-        height:200px;
+        height:220px;
     }
 }
 
-.row.custom-gap{
-    --bs-gutter-x: 60px;   /* default 24px hota hai, yeh zyada gap dega */
+/* Custom gap between 3 cards */
+.row.g-4{
+    --bs-gutter-x:40px; 
 }
-
-/* card3 section css end*/
-
-
 
 /* Slider2 Section Css Start*/
 .alumni-section{
