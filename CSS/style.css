@@ -183,7 +183,7 @@ body {
 }
 
 .logo {
-  height: 110px;   /* 🔥 Bigger logo */
+  height: 80px;   /* 🔥 Bigger logo */
   object-fit: contain;
   transition: 0.3s;
 }
@@ -192,7 +192,7 @@ body {
 .navbar-nav .nav-link {
   color: #1c3c63;
   font-weight: 800;      /* 🔥 More bold */
-  font-size: 12px;       /* 🔥 Bigger text */
+  font-size: 15.5px;       /* 🔥 Bigger text */
   letter-spacing: 0.5px;
   position: relative;
   padding: 10px 8px;
