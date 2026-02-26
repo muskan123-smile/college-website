@@ -35,7 +35,7 @@
    LOGO BLOCK
 ================================ */
 .footer-logo {
-  width: 130px;
+  width: 110px;
   margin-bottom: 18px;
   filter: drop-shadow(0 12px 22px rgba(0,0,0,0.35));
 }
@@ -43,7 +43,7 @@
 .footer-about p {
   color: rgba(255,255,255,0.88);
   line-height: 1.75;
-  font-size: 20px;
+  font-size: 15px;
   max-width: 340px;
 }
 
@@ -81,13 +81,13 @@
 
 .footer-links li {
   margin-bottom: 12px;
-  
+  font-size: 20px;
 }
 
 .footer-links a {
   color: rgba(255,255,255,0.88);
   text-decoration: none;
-  font-size: 20px;
+  font-size: 15px;
   transition: .3s;
   position: relative;
 }
@@ -157,7 +157,7 @@
 
 .footer-social a {
   width: 42px;
-  height: 50px;
+  height: 42px;
   border-radius: 50%;
   background: rgba(255,255,255,0.12);
   backdrop-filter: blur(6px);
@@ -166,7 +166,7 @@
   justify-content: center;
   text-decoration: none;
   color: #fff;
-  font-size: 30px;
+  font-size: 16px;
   transition: all .35s ease;
   box-shadow: 0 6px 14px rgba(0,0,0,0.25);
 }
@@ -189,7 +189,7 @@
   border-top: 1px solid rgba(255,255,255,0.18);
   margin-top: 45px;
   padding-top: 18px;
-  font-size: 18px;
+  font-size: 14px;
   color: rgba(255,255,255,0.78);
   letter-spacing: .3px;
 }
