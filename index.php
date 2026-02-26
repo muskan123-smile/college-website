@@ -61,30 +61,22 @@
       Recognized & Affiliated For Excellence
     </h1>
 
-    <div class="row justify-content-center align-items-center gx-5 gy-4 ">
+    <div class="row justify-content-center align-items-center gx-5 gy-4">
 
-      <div class="col-6 col-md-4 col-lg-2 text-center">
-        <img src="Assets/images/aktulogo.jpg" class="affiliation-logo" alt="">
-      </div>
-
-      <div class="col-6 col-md-4 col-lg-2 text-center">
-        <img src="Assets/images/aictelogo.jpg" class="affiliation-logo" alt="">
-      </div>
-
-      <div class="col-6 col-md-4 col-lg-2 text-center">
-        <img src="Assets/images/lucklogo3.jpg" class="affiliation-logo" alt="">
-      </div>
-
-      <div class="col-6 col-md-4 col-lg-2 text-center">
+      <div class="col-6 col-md-3 col-lg-2 text-center">
         <img src="Assets/images/upglogo4.jpg" class="affiliation-logo" alt="">
       </div>
 
-      <div class="col-6 col-md-4 col-lg-2 text-center">
+      <div class="col-6 col-md-3 col-lg-2 text-center">
+        <img src="Assets/images/aictelogo.jpg" class="affiliation-logo" alt="">
+      </div>
+
+      <div class="col-6 col-md-3 col-lg-2 text-center">
         <img src="Assets/images/plogo5.jpg" class="affiliation-logo" alt="">
       </div>
 
-      <div class="col-6 col-md-4 col-lg-2 text-center">
-        <img src="Assets/images/bhrtlogo6.jpg" class="affiliation-logo" alt="">
+      <div class="col-6 col-md-3 col-lg-2 text-center">
+        <img src="Assets/images/aktulogo.jpg" class="affiliation-logo" alt="">
       </div>
 
     </div>
@@ -222,40 +214,18 @@
 
 <!-- Card2 Section end-->
 
-<!-- Card3 Section Start-->
+<!-- Card Section Start-->
 
 <section class="institutions-section py-5">
   <div class="container text-center">
     <h1 class="section-title mb-5">Discover Our World-Class Institutions</h1>
 
-    <div class="row custom-gap g-4">
+    <div class="row g-4">
 
       <!-- Card 1 -->
-      <div class="col-12 col-md-6">
+      <div class="col-12 col-md-4">
         <div class="institution-card">
-          <img src="Assets/images/img3.jpeg" alt="Geeta Pharmacy College">
-          <div class="institution-content">
-            <h3>Sagar Pharmacy College</h3>
-            <a href="#">Explore Program →</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="col-12 col-md-6">
-        <div class="institution-card">
-          <img src="Assets/images/img2.jpeg" alt="Geeta Law College">
-          <div class="institution-content">
-            <h3>Sagar Law College</h3>
-            <a href="#">Explore Program →</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="col-12 col-md-6">
-        <div class="institution-card">
-          <img src="Assets/images/img1.jpg" alt="Geeta Engineering College">
+          <img src="Assets/images/Sec.jpg" alt="">
           <div class="institution-content">
             <h3>Sagar Engineering College</h3>
             <a href="#">Explore Program →</a>
@@ -263,12 +233,23 @@
         </div>
       </div>
 
-      <!-- Card 4 -->
-      <div class="col-12 col-md-6">
+      <!-- Card 2 -->
+      <div class="col-12 col-md-4">
         <div class="institution-card">
-          <img src="Assets/images/img4.jpeg" alt="Geeta Arts College">
+          <img src="Assets/images/img1.jpg" alt="">
           <div class="institution-content">
-            <h3>Sagar Arts College</h3>
+            <h3>Sagar Pharmacy College</h3>
+            <a href="#">Explore Program →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-12 col-md-4">
+        <div class="institution-card">
+          <img src="Assets/images/sagar.jpg" alt="">
+          <div class="institution-content">
+            <h3>Sagar International School</h3>
             <a href="#">Explore Program →</a>
           </div>
         </div>
