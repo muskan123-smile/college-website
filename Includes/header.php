@@ -96,7 +96,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="/">Placement</a>
+          <a class="nav-link" href="placement.php">Placement</a>
         </li>
 
         <li class="nav-item">
