@@ -40,93 +40,93 @@
   <div class="row g-4 gallery-grid">
           <div class="col-lg-4 col-md-6 col-sm-6">
         <div class="gallery-item">
-          <img src="./assets/gallery/gallery1.jpeg" onclick="openLightbox(0)">
+          <img src="./Assets/images/c1.jpg" onclick="openLightbox(0)">
         </div>
       </div>
           <div class="col-lg-4 col-md-6 col-sm-6">
         <div class="gallery-item">
-          <img src="./assets/gallery/gallery10.jpeg" onclick="openLightbox(1)">
+          <img src="./Assets/images/c2.jpg" onclick="openLightbox(1)">
         </div>
       </div>
           <div class="col-lg-4 col-md-6 col-sm-6">
         <div class="gallery-item">
-          <img src="./assets/gallery/gallery11.jpeg" onclick="openLightbox(2)">
+          <img src="./Assets/images/c3.jpg" onclick="openLightbox(2)">
         </div>
       </div>
           <div class="col-lg-4 col-md-6 col-sm-6">
         <div class="gallery-item">
-          <img src="./assets/gallery/gallery12.jpeg" onclick="openLightbox(3)">
+          <img src="./Assets/images/c4.jpg" onclick="openLightbox(3)">
         </div>
       </div>
           <div class="col-lg-4 col-md-6 col-sm-6">
         <div class="gallery-item">
-          <img src="./assets/gallery/gallery13.jpeg" onclick="openLightbox(4)">
+          <img src="./Assets/images/c5.jpg" onclick="openLightbox(4)">
         </div>
       </div>
           <div class="col-lg-4 col-md-6 col-sm-6">
         <div class="gallery-item">
-          <img src="./assets/gallery/gallery14.jpeg" onclick="openLightbox(5)">
+          <img src="./Assets/images/E1.jpeg" onclick="openLightbox(5)">
         </div>
       </div>
           <div class="col-lg-4 col-md-6 col-sm-6">
         <div class="gallery-item">
-          <img src="./assets/gallery/gallery15.jpeg" onclick="openLightbox(6)">
+          <img src="./Assets/images/sagar.jpg" onclick="openLightbox(6)">
         </div>
       </div>
           <div class="col-lg-4 col-md-6 col-sm-6">
         <div class="gallery-item">
-          <img src="./assets/gallery/gallery16.jpeg" onclick="openLightbox(7)">
+          <img src="./Assets/images/mam.jpg" onclick="openLightbox(7)">
         </div>
       </div>
           <div class="col-lg-4 col-md-6 col-sm-6">
         <div class="gallery-item">
-          <img src="./assets/gallery/gallery17.jpeg" onclick="openLightbox(8)">
+          <img src="./Assets/images/Sec.jpg" onclick="openLightbox(8)">
         </div>
       </div>
           <div class="col-lg-4 col-md-6 col-sm-6">
         <div class="gallery-item">
-          <img src="./assets/gallery/gallery2.jpeg" onclick="openLightbox(9)">
+          <img src="./assets/gallery/.jpeg"  onclick="openLightbox(9)">
         </div>
       </div>
           <div class="col-lg-4 col-md-6 col-sm-6">
         <div class="gallery-item">
-          <img src="./assets/gallery/gallery3.jpeg" onclick="openLightbox(10)">
+          <img src="./assets/gallery/.jpeg" onclick="openLightbox(10)">
         </div>
       </div>
           <div class="col-lg-4 col-md-6 col-sm-6">
         <div class="gallery-item">
-          <img src="./assets/gallery/gallery4.jpeg" onclick="openLightbox(11)">
+          <img src="./assets/gallery/.jpeg" onclick="openLightbox(11)">
         </div>
       </div>
           <div class="col-lg-4 col-md-6 col-sm-6">
         <div class="gallery-item">
-          <img src="./assets/gallery/gallery5.jpeg" onclick="openLightbox(12)">
+          <img src="./assets/images/.jpeg" onclick="openLightbox(12)">
         </div>
       </div>
           <div class="col-lg-4 col-md-6 col-sm-6">
         <div class="gallery-item">
-          <img src="./assets/gallery/gallery6.jpeg" onclick="openLightbox(13)">
+          <img src="./assets/images/.jpeg" onclick="openLightbox(13)">
         </div>
       </div>
           <div class="col-lg-4 col-md-6 col-sm-6">
         <div class="gallery-item">
-          <img src="./assets/gallery/gallery7.jpeg" onclick="openLightbox(14)">
+          <img src="./assets/images/.jpeg" onclick="openLightbox(14)">
         </div>
       </div>
           <div class="col-lg-4 col-md-6 col-sm-6">
         <div class="gallery-item">
-          <img src="./assets/gallery/gallery8.jpeg" onclick="openLightbox(15)">
+          <img src="./Assets/images/.jpeg" onclick="openLightbox(15)">
         </div>
       </div>
           <div class="col-lg-4 col-md-6 col-sm-6">
         <div class="gallery-item">
-          <img src="./assets/gallery/gallery9.jpeg" onclick="openLightbox(16)">
+          <img src="./assets/images/.jpeg" onclick="openLightbox(16)">
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6 col-sm-6">
         <div class="gallery-item">
-          <img src="./assets/gallery/gallery9.jpeg" onclick="openLightbox(16)">
+          <img src="./assets/images/.jpeg" onclick="openLightbox(16)">
         </div>
       </div>
       </div>

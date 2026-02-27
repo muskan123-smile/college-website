@@ -93,10 +93,9 @@
       <!-- Card 1 -->
       <div class="col-12 col-md-4">
         <div class="institution-card">
-          <img src="Assets/images/Sec.jpg" alt="">
+          <img src="Assets/images/c1.jpg" alt="">
           <div class="institution-content">
-            <h3>Sagar Engineering College</h3>
-            <a href="#">Explore Program →</a>
+            
           </div>
         </div>
       </div>
@@ -104,10 +103,9 @@
       <!-- Card 2 -->
       <div class="col-12 col-md-4">
         <div class="institution-card">
-          <img src="Assets/images/img1.jpg" alt="">
+          <img src="Assets/images/c2.jpg" alt="">
           <div class="institution-content">
-            <h3>Sagar Pharmacy College</h3>
-            <a href="#">Explore Program →</a>
+            
           </div>
         </div>
       </div>
@@ -117,8 +115,7 @@
         <div class="institution-card">
           <img src="Assets/images/sagar.jpg" alt="">
           <div class="institution-content">
-            <h3>Sagar International School</h3>
-            <a href="#">Explore Program →</a>
+            
           </div>
         </div>
       </div>
@@ -126,10 +123,9 @@
 
       <div class="col-12 col-md-4">
         <div class="institution-card">
-          <img src="Assets/images/Sec.jpg" alt="">
+          <img src="Assets/images/c3.jpg" alt="">
           <div class="institution-content">
-            <h3>Sagar Engineering College</h3>
-            <a href="#">Explore Program →</a>
+            
           </div>
         </div>
       </div>
@@ -137,10 +133,9 @@
       <!-- Card 2 -->
       <div class="col-12 col-md-4">
         <div class="institution-card">
-          <img src="Assets/images/img1.jpg" alt="">
+          <img src="Assets/images/c4.jpg" alt="">
           <div class="institution-content">
-            <h3>Sagar Pharmacy College</h3>
-            <a href="#">Explore Program →</a>
+            
           </div>
         </div>
       </div>
@@ -148,10 +143,9 @@
       <!-- Card 3 -->
       <div class="col-12 col-md-4">
         <div class="institution-card">
-          <img src="Assets/images/sagar.jpg" alt="">
+          <img src="Assets/images/c5.jpg" alt="">
           <div class="institution-content">
-            <h3>Sagar International School</h3>
-            <a href="#">Explore Program →</a>
+            
           </div>
         </div>
       </div>
