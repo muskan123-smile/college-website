@@ -1,0 +1,354 @@
+/* CONTACT HERO SECTION */
+.contact-hero{
+  background:#f4f6f8;
+  padding:100px 20px;
+  text-align:center;
+}
+
+.contact-hero h1{
+  font-size:56px;
+  font-weight:800;
+  color:#0c3b6e;
+  margin-bottom:25px;
+}
+
+.contact-hero p{
+  max-width:750px;
+  margin:0 auto;
+  font-size:20px;
+  line-height:1.7;
+  color:#555;
+}
+
+/* =========================
+   TABLET
+========================= */
+@media (max-width:992px){
+  .contact-hero{
+    padding:80px 20px;
+  }
+
+  .contact-hero h1{
+    font-size:42px;
+  }
+
+  .contact-hero p{
+    font-size:18px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width:576px){
+  .contact-hero{
+    padding:60px 15px;
+  }
+
+  .contact-hero h1{
+    font-size:32px;
+  }
+
+  .contact-hero p{
+    font-size:16px;
+  }
+}
+
+
+/* ===============================
+   CONTACT SECTION
+================================ */
+/* SECTION BACKGROUND */
+.contact-section{
+    padding:100px 0;
+    background:#f4f6f9;
+}
+
+/* SMALL HEADING */
+.small-heading{
+    color:#f4a100;
+    font-weight:600;
+    letter-spacing:2px;
+    margin-bottom:10px;
+}
+
+/* MAIN HEADING */
+.main-heading{
+    font-size:42px;
+    font-weight:700;
+    color:#0d2c6c;
+    margin-bottom:40px;
+}
+
+/* CONTACT INFO BOX */
+.contact-info .info-box{
+    display:flex;
+    align-items:flex-start;
+    margin-bottom:30px;
+}
+
+.contact-info i{
+    font-size:22px;
+    color:#0d2c6c;
+    margin-right:15px;
+    margin-top:5px;
+}
+
+.contact-info h5{
+    font-weight:700;
+    margin-bottom:5px;
+    font-size:20px;
+    color:#222;
+}
+
+.contact-info p{
+    margin:0;
+    color:#555;
+    line-height:1.6;
+}
+
+/* SOCIAL ICONS */
+.social-icons{
+    margin-top:20px;
+}
+
+.social-icons a{
+    display:inline-block;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    background:#0d2c6c;
+    color:#fff;
+    border-radius:6px;
+    margin-right:10px;
+    transition:0.3s;
+}
+
+.social-icons a:hover{
+    background:#f4a100;
+    transform:translateY(-3px);
+}
+
+/* MAP BOX */
+.map-box{
+    background:#fff;
+    padding:10px;
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.map-box iframe{
+    width:100%;
+    height:450px;
+    border:0;
+    border-radius:10px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width:992px){
+    .main-heading{
+        font-size:32px;
+    }
+
+    .contact-section{
+        padding:70px 20px;
+    }
+
+    .map-box iframe{
+        height:350px;
+    }
+}
+
+@media(max-width:576px){
+    .main-heading{
+        font-size:26px;
+    }
+
+    .contact-info h5{
+        font-size:18px;
+    }
+
+    .contact-info p{
+        font-size:14px;
+    }
+
+    .social-icons a{
+        width:35px;
+        height:35px;
+        line-height:35px;
+    }
+}
+
+/* CONTACT  SECTION END*/
+
+
+/* CARD  SECTION */
+.department-section{
+    padding:100px 0;
+    background:#f4f6f9;
+}
+
+/* HEADING */
+.dept-heading{
+    font-size:42px;
+    font-weight:700;
+    color:#0d2c6c;
+    margin-bottom:20px;
+}
+
+/* CARD */
+.dept-card{
+    background:#fff;
+    padding:40px 25px;
+    border-radius:12px;
+    border:1px solid #e5e5e5;
+    transition:0.3s ease;
+    height:100%;
+}
+
+.dept-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.08);
+}
+
+/* ICON */
+.icon-box{
+    width:60px;
+    height:60px;
+    margin:0 auto 20px;
+    background:#e8f0ff;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.icon-box i{
+    font-size:24px;
+    color:#0d2c6c;
+}
+
+/* TEXT */
+.dept-card h4{
+    font-size:22px;
+    font-weight:600;
+    color:#0d2c6c;
+    margin-bottom:10px;
+}
+
+.dept-card p{
+    color:#666;
+    font-size:15px;
+    margin:0;
+}
+
+/* RESPONSIVE */
+@media(max-width:992px){
+    .dept-heading{
+        font-size:32px;
+    }
+}
+
+@media(max-width:576px){
+    .department-section{
+        padding:70px 20px;
+    }
+
+    .dept-heading{
+        font-size:26px;
+    }
+}
+
+/* CARD  SECTION END */
+
+/* FORM SECTION */
+.message-section{
+    padding:100px 0;
+    background:#f4f6f9;
+}
+
+/* WRAPPER */
+.form-wrapper{
+    max-width:900px;
+    margin:auto;
+}
+
+/* HEADING */
+.form-heading{
+    font-size:42px;
+    font-weight:700;
+    color:#222;
+    margin-bottom:10px;
+}
+
+.form-note{
+    color:#666;
+    margin-bottom:40px;
+}
+
+.form-note span{
+    color:red;
+}
+
+/* FORM GROUP */
+.form-group{
+    margin-bottom:25px;
+}
+
+.form-group label{
+    display:block;
+    font-weight:600;
+    margin-bottom:8px;
+    color:#333;
+}
+
+.form-group label span{
+    color:red;
+}
+
+.form-group input,
+.form-group textarea{
+    width:100%;
+    padding:12px 14px;
+    border:1px solid #ccc;
+    border-radius:4px;
+    font-size:15px;
+    transition:0.3s ease;
+    background:#fff;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+    border-color:#0d2c6c;
+    outline:none;
+    box-shadow:0 0 0 2px rgba(13,44,108,0.1);
+}
+
+/* BUTTON */
+.submit-btn{
+    background:#0d2c6c;
+    color:#fff;
+    padding:10px 30px;
+    border:none;
+    border-radius:4px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s ease;
+}
+
+.submit-btn:hover{
+    background:#f4a100;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .message-section{
+        padding:70px 20px;
+    }
+
+    .form-heading{
+        font-size:28px;
+    }
+}

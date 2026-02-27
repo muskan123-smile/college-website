@@ -30,12 +30,12 @@
       <div class="col-lg-2 col-md-6">
         <h5 class="footer-title">Quick Links</h5>
         <ul class="footer-links">
-          <li><a href="/" class="">About Us</a></li>
+          <li><a href="aboutus.php" class="">About Us</a></li>
           <li><a href="/">Admissions</a></li>
           <li><a href="#">Refund Policy</a></li>
           <li><a href="#">Privacy Policy</a></li>
           <li><a href="#">Terms & Conditions</a></li>
-          <li><a href="/p">Contact Us</a></li>
+          <li><a href="contactus.php">Contact Us</a></li>
         </ul>
       </div>
 

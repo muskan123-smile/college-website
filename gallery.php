@@ -123,6 +123,12 @@
           <img src="./assets/gallery/gallery9.jpeg" onclick="openLightbox(16)">
         </div>
       </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="gallery-item">
+          <img src="./assets/gallery/gallery9.jpeg" onclick="openLightbox(16)">
+        </div>
+      </div>
       </div>
 </div>
 

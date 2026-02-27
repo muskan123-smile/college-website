@@ -80,11 +80,11 @@
 
        
         <li class="nav-item">
-          <a class="nav-link" href="/">Colleges</a>
+          <a class="nav-link" href="colleges.php">Colleges</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="/">Courses</a>
+          <a class="nav-link" href="courses.php">Courses</a>
         </li>
 
         <li class="nav-item">
@@ -92,7 +92,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="/">Contact Us</a>
+          <a class="nav-link" href="contactus.php">Contact Us</a>
         </li>
 
         <li class="nav-item">
