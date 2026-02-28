@@ -1,11 +1,28 @@
+/* ================= GLOBAL FIX ================= */
+html, body{
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+  max-width:100%;
+  font-family:'Poppins', sans-serif;
+  background:#f4f6f9;
+}
+
+*,*::before,*::after{
+  box-sizing:border-box;
+}
+
 /* ================= HERO ================= */
 .inst-hero{
   position:relative;
-  height:450px;
+  min-height:450px;
+  padding:60px 20px;
   background:url("../Assets/images/img1.jpg") center/cover no-repeat;
   display:flex;
   align-items:center;
   justify-content:center;
+  text-align:center;
+  overflow:hidden;
 }
 
 .inst-hero-overlay{
@@ -16,14 +33,15 @@
 
 .inst-hero-content{
   position:relative;
-  color:#fff;
-  text-align:center;
   z-index:2;
+  color:#fff;
+  max-width:900px;
+  width:100%;
 }
 
 .inst-breadcrumb{
   font-size:20px;
-  font-weight: 800;
+  font-weight:800;
   color:#f7b733;
   margin-bottom:8px;
   letter-spacing:.4px;
@@ -34,23 +52,23 @@
   font-size:70px;
   font-weight:800;
   letter-spacing:.3px;
-  margin-bottom:30px;
+  margin-bottom:20px;
+  line-height:1.2;
+  word-break:break-word;
 }
 
 /* ================= INTRO FLOAT ================= */
 .inst-intro{
-  position:relative;
   background:#f4f6f9;
-  padding:0 0 40px;
+  padding-bottom:60px;
 }
 
 .inst-intro-card{
-  position:relative;
-  z-index:3;
   background:#fff;
+  width:calc(100% - 30px);
   max-width:850px;
   margin:-110px auto 60px;
-  padding:60px 42px;
+  padding:60px 40px;
   text-align:center;
   border-radius:14px;
   box-shadow:0 28px 70px rgba(0,0,0,.12);
@@ -106,14 +124,15 @@
 
 /* ================= GRID ================= */
 .inst-list{
+  padding:20px 15px 90px;
   background:#f4f6f9;
-  padding:10px 0 90px;
 }
 
 .inst-grid{
   display:grid;
-  grid-template-columns:repeat(3,1fr); /* 3 CARDS */
+  grid-template-columns:repeat(3,1fr);
   gap:30px;
+  width:100%;
 }
 
 .inst-card{
@@ -123,14 +142,15 @@
   height:240px;
   cursor:pointer;
   box-shadow:0 14px 30px rgba(0,0,0,.08);
-  transition:.35s;
+  transition:.35s ease;
 }
 
 .inst-card img{
   width:100%;
   height:100%;
   object-fit:cover;
-  transition:.45s;
+  display:block;
+  transition:.45s ease;
 }
 
 .inst-card-overlay{
@@ -170,7 +190,7 @@
 .inst-cta{
   background:#fff;
   text-align:center;
-  padding:90px 0;
+  padding:90px 20px;
 }
 
 .inst-cta h2{
@@ -196,9 +216,8 @@
   border-radius:6px;
   font-size:18px;
   font-weight:700;
-  letter-spacing:.4px;
   text-decoration:none;
-  transition:.25s;
+  transition:.25s ease;
   box-shadow:0 10px 22px rgba(0,0,0,.15);
 }
 
@@ -211,13 +230,14 @@
 /* ================= RESPONSIVE ================= */
 @media (max-width:1100px){
   .inst-grid{
-    grid-template-columns:repeat(2,1fr); /* tablet 2 */
+    grid-template-columns:repeat(2,1fr);
   }
 }
 
 @media (max-width:768px){
   .inst-hero{
-    height:280px;
+    min-height:280px;
+    padding:40px 15px;
   }
 
   .inst-hero h1{
@@ -225,8 +245,8 @@
   }
 
   .inst-intro-card{
-    margin:-70px 20px 40px;
-    padding:26px 22px;
+    margin:-70px auto 40px;
+    padding:30px 20px;
   }
 
   .section-title{
@@ -234,6 +254,20 @@
   }
 
   .inst-grid{
-    grid-template-columns:1fr; /* mobile 1 */
+    grid-template-columns:1fr;
+  }
+}
+
+@media (max-width:480px){
+  .inst-hero h1{
+    font-size:26px;
+  }
+
+  .inst-intro-card h2{
+    font-size:24px;
+  }
+
+  .inst-card{
+    height:200px;
   }
 }

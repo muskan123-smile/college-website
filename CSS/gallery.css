@@ -1,5 +1,7 @@
-/* ===== Page Background ===== */
-body{
+/* GLOBAL FIX */
+html,body{
+  overflow-x:hidden;
+  max-width:100%;
   background:#f4f6f9;
 }
 
@@ -10,6 +12,7 @@ body{
   padding:0 15px;
   text-align:center;
 }
+
 .gallery-title{
   font-family:'Montserrat',sans-serif;
   font-size:48px;
@@ -33,6 +36,7 @@ body{
   border-radius:3px;
   background:linear-gradient(90deg, rgb(240,165,25), rgb(255,200,80));
 }
+
 .gallery-desc{
   font-size:15px;
   line-height:1.7;
@@ -42,7 +46,7 @@ body{
 
 /* ===== Grid ===== */
 .gallery-grid{
-  padding:10px 0 60px;
+  padding:10px 15px 60px; /* horizontal padding add */
 }
 
 .gallery-item{
@@ -52,6 +56,7 @@ body{
   background:#fff;
   box-shadow:0 6px 18px rgba(0,0,0,.08);
   cursor:pointer;
+  width:100%;
 }
 
 .gallery-item img{
@@ -59,10 +64,7 @@ body{
   height:260px;
   object-fit:cover;
   transition:transform .4s ease;
-}
-
-.gallery-item:hover img{
-  transform:scale(1.08);
+  display:block;
 }
 
 /* ===== Lightbox ===== */
@@ -75,48 +77,36 @@ body{
   justify-content:center;
   z-index:9999;
   padding:20px;
+  overflow:hidden;
 }
 
 .lightbox img{
-  max-width:92%;
-  max-height:88vh;
+  max-width:95%;
+  max-height:85vh;
   border-radius:12px;
-  box-shadow:0 10px 40px rgba(0,0,0,.4);
 }
 
 .lightbox-close{
   position:absolute;
-  top:25px;
-  right:30px;
-  font-size:38px;
+  top:20px;
+  right:20px;
+  font-size:32px;
   color:#fff;
   cursor:pointer;
-  transition:.2s;
 }
 
-.lightbox-close:hover{
-  transform:scale(1.15);
-}
-
-/* Navigation */
 .lightbox-btn{
   position:absolute;
   top:50%;
   transform:translateY(-50%);
-  font-size:48px;
+  font-size:42px;
   color:#fff;
   cursor:pointer;
-  padding:12px;
-  user-select:none;
-  transition:.2s;
+  padding:10px;
 }
 
-.lightbox-btn:hover{
-  transform:translateY(-50%) scale(1.2);
-}
-
-.lightbox-prev{ left:25px; }
-.lightbox-next{ right:25px; }
+.lightbox-prev{ left:10px; }
+.lightbox-next{ right:10px; }
 
 /* ===== Responsive ===== */
 @media (max-width:992px){
@@ -127,13 +117,10 @@ body{
 @media (max-width:768px){
   .gallery-title{ font-size:34px; }
   .gallery-item img{ height:200px; }
-  .lightbox-btn{ font-size:40px; }
-  .lightbox-close{ font-size:32px; }
 }
 
 @media (max-width:576px){
-  .gallery-header{ margin:40px auto 2z5px; }
-  .gallery-title{ font-size:30px; }
-  .gallery-desc{ font-size:15.5px; }
+  .gallery-header{ margin:40px auto 25px; } /* typo fixed */
+  .gallery-title{ font-size:28px; }
   .gallery-item img{ height:180px; }
 }
