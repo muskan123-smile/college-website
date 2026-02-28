@@ -32,9 +32,9 @@
         <ul class="footer-links">
           <li><a href="aboutus.php" class="">About Us</a></li>
           <li><a href="/">Admissions</a></li>
-          <li><a href="#">Refund Policy</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Collges</a></li>
+          <li><a href="#">Coures</a></li>
+          <li><a href="#">Placement</a></li>
           <li><a href="contactus.php">Contact Us</a></li>
         </ul>
       </div>

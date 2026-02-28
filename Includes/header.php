@@ -71,7 +71,7 @@
       <ul class="navbar-nav align-items-lg-center gap-lg-4">
 
         <li class="nav-item">
-          <a class="nav-link" href="/">Home</a>
+          <a class="nav-link" href="index.php">Home</a>
         </li>
 
          <li class="nav-item">
@@ -88,7 +88,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="/">Admission</a>
+          <a class="nav-link" href="admission.php">Admission</a>
         </li>
 
         <li class="nav-item">

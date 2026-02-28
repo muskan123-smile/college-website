@@ -145,45 +145,28 @@
 
 <!--Form-->
 
-<section class="message-section">
-  <div class="container">
-    <div class="form-wrapper">
+<section class="contact-section">
+    <div class="contact-container">
 
-      <h2 class="form-heading">Send Us a Message</h2>
-      <p class="form-note">Fields marked with an <span>*</span> are required</p>
+        <h2 class="contact-heading">Send Us a Message</h2>
 
-      <form>
+        <form class="contact-form">
+            <div class="form-row">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+            </div>
 
-        <!-- Name -->
-        <div class="form-group">
-          <label>Name <span>*</span></label>
-          <input type="text" required>
-        </div>
+            <div class="form-row">
+                <input type="tel" placeholder="Your Phone">
+                <input type="text" placeholder="Your Subject">
+            </div>
 
-        <!-- Phone -->
-        <div class="form-group">
-          <label>Phone <span>*</span></label>
-          <input type="text" required>
-        </div>
+            <textarea placeholder="Your Message" rows="6" required></textarea>
 
-        <!-- Email -->
-        <div class="form-group">
-          <label>Email</label>
-          <input type="email">
-        </div>
-
-        <!-- Message -->
-        <div class="form-group">
-          <label>Message</label>
-          <textarea rows="4"></textarea>
-        </div>
-
-        <button type="submit" class="submit-btn">Submit</button>
-
-      </form>
+            <button type="submit" class="send-btn">Send Message</button>
+        </form>
 
     </div>
-  </div>
 </section>
 
 <!--Form End-->
