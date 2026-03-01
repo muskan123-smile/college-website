@@ -83,12 +83,12 @@
           <ul class="dropdown-menu shadow border-0">
             <li>
               <a class="dropdown-item" href="sagar-engineering.php">
-                Sagar Engineering
+                Sagar Engineering College
               </a>
             </li>
             <li>
               <a class="dropdown-item" href="sagar-pharmacy.php">
-                Sagar Pharmacy
+                Sagar Pharmacy College
               </a>
             </li>
             <li>
