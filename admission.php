@@ -136,7 +136,7 @@ section {
     <div class="admission-card">
 
       <div class="admission-logo text-center">
-        <img src="assets/images/logo.png" alt="Logo">
+        <img src="Assets/images/logo.png" alt="Logo">
       </div>
 
       <div class="admission-head text-center">
