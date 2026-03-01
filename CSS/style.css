@@ -1,169 +1,238 @@
 /*   CSS Start*/
-body {
+/* =========================================
+   GLOBAL
+========================================= */
+body{
   font-family: "Segoe UI", Roboto, Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+  background:#f4f6f9;
 }
 
-/* ===============================
+*,*::before,*::after{
+  box-sizing:border-box;
+}
+
+/* =========================================
    TOP BAR
-================================ */
-.top-bar {
-  background: linear-gradient(90deg,#0c3b6e,#0a2f57);
-  color: #fff;
-  padding: 14px 0;
-  position: relative;
-  overflow: hidden;
+========================================= */
+.top-bar{
+  background:linear-gradient(90deg,#0c3b6e,#0a2f57);
+  color:#fff;
+  padding:14px 0;
+  position:relative;
+  overflow:hidden;
 }
 
-.top-bar .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-  text-align: center;
+.top-bar .container{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:18px;
+  flex-wrap:wrap;
+  text-align:center;
 }
 
-/* Shine Effect */
-.top-bar::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -40%;
-  width: 40%;
-  height: 100%;
-  background: linear-gradient(120deg,transparent,rgba(255,255,255,0.18),transparent);
-  transform: skewX(-25deg);
-  animation: topShine 6s linear infinite;
+.top-text{
+  font-weight:700;
+  font-size:16px;
+  padding:0 15px;
+  letter-spacing:.5px;
 }
 
-@keyframes topShine {
-  0% { left: -40%; }
-  100% { left: 120%; }
+.apply-btn{
+  padding:7px 20px;
+  border-radius:8px;
+  font-size:14px;
+  font-weight:700;
+  color:#fff;
+  background:linear-gradient(135deg,#e3b41b,#ffb300);
+  border:none;
+  white-space:nowrap;
+  box-shadow:0 6px 14px rgba(0,0,0,0.2);
+  transition:.3s;
 }
 
-/* Text */
-.top-text {
-  font-weight: 700;
-  font-size: 16px;
-  padding: 0 15px;
+.apply-btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 10px 22px rgba(0,0,0,0.28);
 }
 
-/* Apply Button */
-.apply-btn {
-  padding: 6px 18px;
-  border-radius: 6px;
-  font-size: 14px;
-  font-weight: 700;
-  color: #fff;
-  background: linear-gradient(135deg,#e3b41b,#ffb300);
-  border: none;
-  white-space: nowrap;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.18);
-  transition: all 0.3s ease;
+.top-close{
+  position:absolute;
+  top:8px;
+  right:12px;
+  font-size:18px;
+  cursor:pointer;
 }
 
-.apply-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.25);
-}
-
-/* Close Button */
-.top-close {
-  position: absolute;
-  top: 8px;
-  right: 12px;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-/* ===============================
+/* =========================================
    NAVBAR
-================================ */
-.main-navbar {
-  background: #f5f7fa;
-  padding: 12px 0;
-  border-bottom: 1px solid #e6e9ee;
+========================================= */
+.main-navbar{
+  background:#ffffff;
+  padding:14px 0;
+  border-bottom:1px solid #e6e9ee;
 }
 
-.main-navbar .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-/* Logo */
-.logo {
-  height: 75px;
-  object-fit: contain;
+.logo{
+  height:75px;
+  object-fit:contain;
 }
 
 /* Nav Links */
-.navbar-nav .nav-link {
-  color: #1c3c63;
-  font-weight: 600;
-  font-size: 15px;
-  padding: 8px 10px;
-  transition: 0.3s;
+.navbar-nav .nav-link{
+  color:#1c3c63;
+  font-weight:600;
+  font-size:16px;   /* 👈 bigger */
+  padding:10px 14px;
+  transition:.3s;
+  position:relative;
 }
 
-.navbar-nav .nav-link:hover {
-  color: #ffb300;
+.navbar-nav .nav-link:hover{
+  color:#ffb300;
 }
 
-/* Inquiry Button */
-.inquiry-btn {
-  background: linear-gradient(135deg,#0c3b6e,#0a2f57);
-  color: #fff;
-  font-weight: 600;
-  padding: 8px 18px;
-  border-radius: 6px;
-  white-space: nowrap;
-  transition: 0.3s;
+/* =========================================
+   PREMIUM DROPDOWN
+========================================= */
+
+.navbar .dropdown{
+  position:relative;
 }
 
-.inquiry-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(12,59,110,0.25);
-  color: #fff;
+.navbar .dropdown-menu{
+  border:none;
+  border-radius:18px;
+  padding:18px 0;
+  min-width:280px;
+  margin-top:22px;
+  background:#fff;
+  box-shadow:0 30px 70px rgba(0,0,0,0.15);
+  opacity:0;
+  visibility:hidden;
+  transform:translateY(15px);
+  transition:all .35s ease;
+  display:block;
 }
 
-/* ===============================
-   MOBILE
-================================ */
-@media (max-width: 991px) {
+/* Dropdown Items */
+.dropdown-item{
+  position:relative;
+  padding:16px 28px;
+  font-weight:700;
+  font-size:16px;        /* 👈 bigger text */
+  color:#1c3c63;
+  transition:.3s;
+}
 
-  .logo { height: 65px; }
+/* Left Accent Line */
+.dropdown-item::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:50%;
+  transform:translateY(-50%);
+  height:0;
+  width:4px;
+  background:linear-gradient(#ffb300,#e3b41b);
+  border-radius:4px;
+  transition:.3s;
+}
 
-  .navbar-collapse {
-    background: #fff;
-    padding: 18px;
-    margin-top: 10px;
-    border-radius: 10px;
-    box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+.dropdown-item:hover{
+  background:linear-gradient(90deg,#f9fbff,#f1f5fb);
+  color:#0c3b6e;
+  padding-left:36px;
+}
+
+.dropdown-item:hover::before{
+  height:60%;
+}
+
+/* Desktop Hover */
+@media (min-width:992px){
+  .navbar .dropdown:hover .dropdown-menu{
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+  }
+}
+
+/* =========================================
+   INQUIRY BUTTON
+========================================= */
+.inquiry-btn{
+  background:linear-gradient(135deg,#0c3b6e,#0a2f57);
+  color:#fff;
+  font-weight:600;
+  padding:9px 20px;
+  border-radius:8px;
+  white-space:nowrap;
+  transition:.3s;
+}
+
+.inquiry-btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 18px rgba(12,59,110,0.3);
+  color:#fff;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width:991px){
+
+  .logo{ height:65px; }
+
+  .navbar-collapse{
+    background:#fff;
+    padding:20px;
+    margin-top:10px;
+    border-radius:16px;
+    box-shadow:0 12px 28px rgba(0,0,0,0.08);
+  }
+
+  .navbar-nav .nav-link{
+    padding:12px 0;
+    font-size:16px;
+  }
+
+  /* Mobile dropdown */
+  .navbar .dropdown-menu{
+    position:static;
+    opacity:1;
+    visibility:visible;
+    transform:none;
+    margin-top:8px;
+    box-shadow:none;
+    border-radius:12px;
+    padding:8px 0;
+  }
+
+  .dropdown-item{
+    padding:14px 18px;
   }
 
 }
 
-@media (max-width: 576px) {
+@media (max-width:576px){
 
-  .top-text {
-    font-size: 14px;
+  .top-text{ font-size:14px; }
+
+  .apply-btn{
+    font-size:13px;
+    padding:6px 14px;
   }
 
-  .apply-btn {
-    font-size: 13px;
-    padding: 5px 14px;
-  }
-
-  .logo {
-    height: 55px;
-  }
+  .logo{ height:55px; }
 
 }
+
+/* Navbar End */
 
 /* logo section css */
 
