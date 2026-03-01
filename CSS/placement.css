@@ -1,21 +1,9 @@
-/* ================= GLOBAL ================= */
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
-body{
-  font-family:'Poppins', sans-serif;
-  background:linear-gradient(to right,#eef2ff,#f8fafc);
-  overflow-x:hidden;
-}
-
 /* ================= HERO ================= */
 .inst-hero{
   position:relative;
   min-height:450px;
-  background:url("../Assets/images/img1.jpg") center/cover no-repeat;
+  height:auto;
+  background:url("../Assets/images/img1.jpg") center center/cover no-repeat;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -31,8 +19,9 @@ body{
 
 .inst-hero-content{
   position:relative;
-  z-index:2;
   color:#fff;
+  z-index:2;
+  width:100%;
   max-width:900px;
 }
 
@@ -40,40 +29,68 @@ body{
   font-size:20px;
   font-weight:800;
   color:#f7b733;
-  margin-bottom:10px;
+  margin-bottom:8px;
+  letter-spacing:.4px;
 }
 
 .inst-hero h1{
+  font-family:'Montserrat',sans-serif;
   font-size:70px;
   font-weight:800;
+  letter-spacing:.3px;
+  margin-bottom:20px;
   line-height:1.2;
 }
 
-/* ================= HERO RESPONSIVE ================= */
+/* ================= 992px ================= */
 @media (max-width:992px){
-  .inst-hero{ min-height:380px; }
-  .inst-hero h1{ font-size:48px; }
-  .inst-breadcrumb{ font-size:18px; }
+  .inst-hero{
+    min-height:380px;
+    padding:50px 20px;
+  }
+  .inst-hero h1{
+    font-size:48px;
+  }
+  .inst-breadcrumb{
+    font-size:18px;
+  }
 }
 
+/* ================= 575px ================= */
 @media (max-width:575px){
-  .inst-hero{ min-height:260px; padding:40px 15px; }
-  .inst-hero h1{ font-size:30px; }
-  .inst-breadcrumb{ font-size:15px; }
+  .inst-hero{
+    min-height:260px;
+    padding:40px 15px;
+  }
+  .inst-hero h1{
+    font-size:30px;
+  }
+  .inst-breadcrumb{
+    font-size:15px;
+  }
 }
 
+/* ================= 400px PERFECT ================= */
 @media (max-width:400px){
-  .inst-hero{ min-height:220px; }
-  .inst-hero h1{ font-size:22px; }
-  .inst-breadcrumb{ font-size:13px; }
+  .inst-hero{
+    min-height:220px;
+    padding:30px 15px;
+  }
+  .inst-hero h1{
+    font-size:22px;
+  }
+  .inst-breadcrumb{
+    font-size:13px;
+  }
 }
 
-/* ================= PLACEMENT MAIN BOX ================= */
+/* SECTION */
 .placement-section{
-  padding:100px 20px;
+  padding:100px 0;
   background:#f4f6f9;
 }
 
+/* BOX */
 .placement-box{
   background:#fff;
   padding:60px;
@@ -86,6 +103,7 @@ body{
   font-size:120px;
   font-weight:800;
   color:#0d2c6c;
+  margin:0;
   line-height:1;
 }
 
@@ -124,13 +142,53 @@ body{
   line-height:1.8;
 }
 
-/* ================= PLACEMENT STATS ================= */
+/* RESPONSIVE */
+@media(max-width:992px){
+  .placement-box{
+    padding:40px 25px;
+  }
+  .placement-percent{
+    font-size:50px;
+  }
+  .main-title{
+    font-size:28px;
+  }
+  .placement-section{
+    padding:70px 20px;
+  }
+}
+
+/* placement count*/
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+  background:linear-gradient(to right,#eef2ff,#f8fafc);
+}
+
+.placement-section{
+  padding:80px 20px;
+  text-align:center;
+}
+
+.placement-section h2{
+  font-size:38px;
+  font-weight:700;
+  margin-bottom:60px;
+  background:linear-gradient(to right, #1d4ed8, #059669);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
 .stats-container{
   display:flex;
   justify-content:center;
   gap:30px;
   flex-wrap:wrap;
-  margin-top:60px;
 }
 
 .stat-card{
@@ -139,7 +197,14 @@ body{
   width:260px;
   border-radius:15px;
   box-shadow:0 10px 25px rgba(0,0,0,0.08);
-  transition:.4s ease;
+  transition:0.4s ease;
+  opacity:0;
+  transform:translateY(40px);
+}
+
+.stat-card.show{
+  opacity:1;
+  transform:translateY(0);
 }
 
 .stat-card:hover{
@@ -159,7 +224,18 @@ body{
   color:#555;
 }
 
-/* ================= CTA SECTION ================= */
+@media(max-width:768px){
+  .placement-section h2{
+    font-size:28px;
+  }
+  .stat-card{
+    width:100%;
+    max-width:320px;
+  }
+}
+
+/* placement count End*/
+
 .placement-cta{
   background:#f1f5f9;
   padding:100px 20px;
@@ -176,6 +252,7 @@ body{
   font-weight:900;
   color:#1d4ed8;
   margin-bottom:25px;
+  line-height:1.3;
 }
 
 .placement-cta p{
@@ -193,7 +270,8 @@ body{
   border-radius:8px;
   font-weight:600;
   text-decoration:none;
-  transition:.3s ease;
+  transition:0.3s ease;
+  letter-spacing:0.5px;
 }
 
 .cta-btn:hover{
@@ -202,22 +280,15 @@ body{
   box-shadow:0 8px 20px rgba(0,0,0,0.15);
 }
 
-/* ================= RESPONSIVE ================= */
-@media(max-width:992px){
-
-  .placement-box{ padding:40px 25px; }
-  .placement-percent{ font-size:60px; }
-  .main-title{ font-size:28px; }
-}
-
+/* Responsive */
 @media(max-width:768px){
-
-  .stat-card{
-    width:100%;
-    max-width:320px;
+  .placement-cta h2{
+    font-size:28px;
   }
-
-  .placement-cta h2{ font-size:28px; }
-  .placement-cta p{ font-size:16px; }
-  .cta-btn{ padding:14px 25px; }
+  .placement-cta p{
+    font-size:16px;
+  }
+  .cta-btn{
+    padding:14px 25px;
+  }
 }
